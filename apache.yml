@@ -11,8 +11,8 @@
         name: docker
         state: started
         enabled: True
-     - name: Copy httpd server html
-       copy:
+    - name: Copy httpd server html
+      copy:
         src: index.html
         dest: /var/www/html/
 ...
