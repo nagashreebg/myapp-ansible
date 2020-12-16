@@ -11,4 +11,14 @@
         name: docker
         state: started
         enabled: True
+    - name: pulling docker image
+      docker_image:
+           name: hello
+           source: pull
+    - name: creating a container
+      docker_container:
+           name: nagashree
+           image: hello
+           state: started
+           detach: yes
 ...
