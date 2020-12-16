@@ -11,8 +11,6 @@
         name: docker
         state: started
         enabled: True
-    - name: installing docker SDK
-      command: "pip3 install docker"
     - name: pulling docker image
       docker_image:
            name: hello
