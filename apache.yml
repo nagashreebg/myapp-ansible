@@ -11,8 +11,8 @@
         name: docker
         state: started
         enabled: True
-     - name: Run Container
-       create_containers: 1
+    - name: Start Docker container
+      create_containers: 1
        default_container_name: docker
        default_container_image: ubuntu
        default_container_command: sleep 1d
