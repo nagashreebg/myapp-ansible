@@ -13,7 +13,7 @@
         enabled: True
     - name: Start Docker container
       create_containers: 1
-       default_container_name: docker
-       default_container_image: ubuntu
-       default_container_command: sleep 1d
+      default_container_name: docker
+      default_container_image: ubuntu
+      default_container_command: sleep 1d
 ...
